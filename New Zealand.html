@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>France</title>
+<style>
+
+body {background-color:black;}
+
+.para { margin:20px; }
+
+.scroll {
+		margin:2px, 2px;
+		padding: 2px;
+		background-color: white;
+		width: 1000px;
+		overflow-x: auto;
+		overflow-y: hidden;
+		white-space:nowrap;
+		align:center;
+		}
+
+
+.h1 { font-family: Fantasy;
+	font-size: 45px;
+	color: white ;
+}
+
+
+p { font-family: times new roman;
+	font-size: 20px;
+	color: black;
+}
+
+.p1 {
+  background-color: lightgrey;
+  padding: 30px;
+  margin: 10px;
+  font-size:20;
+ 
+}
+
+		<!--................for form..............-->
+
+.open-button {
+  background-color: lightgrey;
+  color: blue;
+  font-family: times new roman;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  margin-bottom:10px;
+}
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 600px;
+  border: none;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+</style>
+</head>
+<body><div class="para">
+<h1 class="h1">New Zealand</hl>
+<p align="justify" class="p1"> It’s not often you hear a discussion about New Zealand without a mention of its epic landscapes and action-packed activities. 
+Consisting of two main islands (North Island and South Island), the country is also defined by its ever-present indigenous Māori culture and thriving cities. 
+With so much spectacular scenery in one country, it’s hard to know where to start, but the Southern Alps are a safe bet. <br><br> Its snow-peaked mountains loom over 
+piercing blue glacial lakes, blooming lupins and rolling hills as far as the eye can see. Follow the smell of sulphur towards Rotorua and you’ll encounter smouldering volcanoes, 
+spewing geysers and hot springs. Wealth of outdoor activities are available amidst the stunning scenery, such as cave rafting, river canoeing and kayaking or quad biking.<br><br> 
+The South Island beaches of The Catlins and the Otago Peninsula are prime locations to spot penguins, seals and sea lions. Although there’s enough nature to wow you for an entire trip 
+and then some, New Zealand’s cities shouldn’t be missed. In the northern half of the North Island, the cosmopolitan city of Auckland showcases pretty waterfront districts, museums 
+and the Sky Tower – the tallest free-standing tower in the Southern Hemisphere. Capital city Wellington is ringed by mountains and offers a diverse mix of architecture, good food 
+and a lively arts and entertainment scene.
+<button class="open-button" onclick="openForm()">More Information</button></p>
+    
+</div>
+
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+    <h1 align="center">Login For More Information</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+If you haven't an account <a href="#">Sign In</a>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+<center>
+
+<div class="scroll">
+<img src="Sky-tower.jpg" height="500px" width="500px">		
+<img src="9.Glowworm-Pool.jpg" height="500px" width="500px">
+<img src="AU_Christchurch_AU_Header.jpg" height="500px" width="500px">
+<img src="imagenz.jpg" height="500px" width="500px">	
+<img src="Museum_of_New_Zealand_Te_Papa_Tongarewa.jpg" height="500px" width="500px">
+<img src="fa1161174d0599e213c628f7ddbe14f3.jpg" height="500px" width="500px">	
+<img src="Wai-O-Tapu Thermal Wonderland Ticket in Rotorua, New Zealand.jpg" height="500px" width="500px">
+
+</div>
+
+
+</center>
+
+
+</body>
+</html>

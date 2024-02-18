@@ -1,0 +1,157 @@
+<html>
+<head>
+<style>
+body, html{
+ height: 100%;
+  margin: 0;
+}
+.bg {	background-image:url(signupimg2.jpg);
+		height:55%;
+		
+		background-size: cover;
+		background-repeat: no repeat;
+		background-position: center;
+		}
+	
+	.logo	{ 	color: white;
+			font-size: 25px;
+			font-family: Rockwell;
+			}
+
+	.text1	{ 	color: white;
+			font-size: 18px;
+			font-family: Arial;
+			text-decoration: none;
+			}
+
+
+	.sign {	font-family: Helvetica;
+			color: white;
+			font-size: 65px;
+			-webkit-text-stroke-color: black;
+			-webkit-text-stroke-width: 2.5px;
+			text-align: center;
+			}
+	 .nav{
+			width:100%;
+	 		height:9vh;
+			background:rgba(0,0,0,0.5);
+	 		color:white; 
+	 		display:flex;
+	 		justify-content:space-between;
+	 		align-items:center;
+				position: -webkit-sticky;  
+    				position: sticky;
+    			 	top: 0;
+    			 	padding: 5px;
+	 			border: 0px double #f10d7f;
+			 }
+		<!--................for form..............-->
+
+
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 50%;
+  padding: 10px;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: silver;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: green;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .reset {
+  background-color: red;
+ width: 100px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+<div class="bg">
+<div class="nav">
+<table align="left">
+<tr>
+<td><img src="logo2.png" width="65" height="65"></td>
+<td><h1 class="logo">Ceylon <br>Travels</h1></td>
+</tr>
+</table>
+<table width="450" align="right">
+<tr>
+<td align="center"><a class="text1" href="home.html" align="right" target="_blank" ><b>HOME</b></a></td>
+<td align="center"><a class="text1" href="about.html" align="right" target="_blank"><b>ABOUT</b></a></td>
+<td align="center"><a class="text1" href="contact.html" align="right" target="_blank"><b>CONTACT</b></a></td>
+<td align="center"><a class="text1" href="signup.html" align="right" target="_blank"><b>SIGN UP</b></a></td>
+</tr>
+
+</table>
+</div>
+<br><br><br>
+<p class="sign"><b>Sign Up</b></p>
+</div>
+
+<br><br>
+
+<div id="myForm">
+  <form class="form-container">
+<table width="90%" align="center">
+
+<tr><td> <label for="First Name" style="font-size:25px;"><b>Frist Name</b></label></td>
+    <td><input type="text" placeholder="Enter Frist Name" style="width:300px;" required></td>
+
+	<td> <label for="Last Name" style="font-size:25px;"><b>Last Name</b></label></td>
+     	<td><input type="text" placeholder="Enter Last Name" style="width:300px;" required></td></tr>
+
+<tr><td> <label for="Mobile Number" style="font-size:25px;"><b>Mobile Number</b></label></td>
+     <td><input type="text" placeholder="+94 123 456 789" style="width:300px;" required></td>
+
+    	<td> <label for="Emali" style="font-size:25px;"><b>Email</b></label></td>
+     	<td><input type="text" placeholder="Enter Email" style="width:300px;" required></td></tr>
+
+<tr><td><label for="psw" style="font-size:25px;"><b>Password</b></label></td>
+    <td><input type="password" placeholder="Enter Password" name="psw" style="width:300px;" required></td>
+
+	<td><label for="psw" style="font-size:25px;"><b>Confirm Password</b></label></td>
+    	<td><input type="password" placeholder="ReEnter Password" name="psw" style="width:300px;" required></td></tr>
+
+    <tr><td><button type="submit" class="btn" style="font-size:15px;">Submit</button>
+    <button type="reset" class="btn reset" style="font-size:15px;">Reset</button></td></tr>
+
+</table>
+  </form>
+</div>
+
+
+
+
+</body>
+</html>

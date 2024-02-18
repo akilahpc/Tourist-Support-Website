@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>France</title>
+<style>
+
+body {background-color:black;}
+
+.para { margin:20px; }
+
+.scroll {
+		margin:2px, 2px;
+		padding: 2px;
+		background-color: white;
+		width: 1000px;
+		overflow-x: auto;
+		overflow-y: hidden;
+		white-space:nowrap;
+		align:center;
+		}
+
+
+.h1 { font-family: Fantasy;
+	font-size: 45px;
+	color: white ;
+}
+
+
+p { font-family: times new roman;
+	font-size: 20px;
+	color: black;
+}
+
+.p1 {
+  background-color: lightgrey;
+  padding: 30px;
+  margin: 10px;
+  font-size:20;
+ 
+}
+
+		<!--................for form..............-->
+
+.open-button {
+  background-color: lightgrey;
+  color: blue;
+  font-family: times new roman;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  margin-bottom:10px;
+}
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 600px;
+  border: none;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+</style>
+</head>
+<body><div class="para">
+<h1 class="h1">France</hl>
+<p align="justify" class="p1"> Welcoming more than 89 million visitors per year, France is the most visited country in the world.
+ Little wonder, owing to the eternal pull of the cosmopolitan capital of Paris. City breaks to the French capital are always popular with couples,
+ who long to experience the romance of Paris’s historic streets and glistening Eiffel Tower. Furthermore, Paris is a shopping paradise and boasts some of the finest restaurants in the world.
+ On the other hand, France offers an array of Mediterranean beaches along its glamorous Côte d’Azur. The French Riviera is awash with upmarket resort towns and coastal villages,
+ making it another top destination for tourism. France’s diversity doesn’t stop there, as the chateaux and vineyards of the Loire Valley are another reason to visit this European nation.
+<br><br>
+ France known as a country of art, culture, and romance, millions of travelers arrive in France every year.
+Some head for the mountains, others to the seaside, and some to the picturesque villages of rural France. 
+Millions, however, are drawn to the urban heartlands of French culture-the cities of France. Paris is The Most Visited City in France
+France’s cosmopolitan capital holds the number one spot on this list and it is not hard to see why. A truly global city and one of the largest in Europe, 
+Paris has a reputation for being among the most beautiful and romantic places in the world. It is a focal point of tourism in France.
+The “City of Light” is renowned for having been a center of European art for centuries, from Baroque to Impressionism and its many world-famous art museums reflect this history.
+A world capital of fashion, food, and culture, visitors can enjoy fine dining, stroll along the banks of the Seine, 
+and visit the cobbled streets of the historic Montmartre district where artists from Manet and Van Gogh to Picasso set up their studios.
+Few cities can claim to have as many iconic landmarks as Paris.
+<button class="open-button" onclick="openForm()">More Information</button></p>
+    
+</div>
+
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+    <h1 align="center">Login For More Information</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+If you haven't an account <a href="#">Sign In</a>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+<center>
+
+<div class="scroll">
+<img src="Eiffel-Tower-Paris.jpg" height="500px" width="500px">		
+<img src="Avenue_des_Champs-Élysées_July_24,_2009_N1.jpg" height="500px" width="500px">
+<img src="Le_sacre_coeur.jpg" height="500px" width="500px">
+<img src="Moulin Rouge Airbnb 04 - Exterior MR - credit Daniel Alexander.jpg" height="500px" width="500px">	
+<img src="Notre-Dame-de-Paris-France.jpg" height="500px" width="500px">
+<img src="Obelisk_in_Place_de_la_Concorde,_Paris.jpg" height="500px" width="500px">	
+<img src="Place-Arc-de-Triomphe-Paris-Charles-Gaulle.jpg" height="500px" width="500px">
+<img src="The-Chapel-of-The-King-5.jpg" height="500px" width="500px">
+</div>
+
+
+</center>
+
+
+</body>
+</html>

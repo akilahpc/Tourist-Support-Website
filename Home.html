@@ -1,0 +1,191 @@
+<html>
+<head>
+<title>Ceylon Travel</title>
+<style>
+body, html{
+ height: 100%;
+  margin: 0;
+}
+	.bg {	background-image:url(2.jpg);
+		height:55%;
+		
+		background-size: cover;
+		background-repeat: no repeat;
+		background-position: center;
+		}
+	
+	.logo	{ 	color: white;
+			font-size: 25px;
+			font-family: Rockwell;
+			}
+
+	.text1	{ 	color: white;
+			font-size: 18px;
+			font-family: Arial;
+			text-decoration: none;
+			}
+
+
+	.welcome {	font-family: Helvetica;
+			color: white;
+			font-size: 55px;
+			-webkit-text-stroke-color: black;
+			-webkit-text-stroke-width: 2.5px;
+			}
+	 .nav{
+			width:100%;
+	 		height:9vh;
+			background:rgba(0,0,0,0.5);
+	 		color:white; 
+	 		display:flex;
+	 		justify-content:space-between;
+	 		align-items:center;
+				position: -webkit-sticky;  
+     				position: sticky;
+     				top: 0;
+    				padding: 5px;
+				border: 0px double #f10d7f;
+			 }
+
+<!--css for Hover Overlay effect-->
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  font-weight:bold;
+  color: black;
+  font-size:25px;
+  
+ 
+}
+	
+		 
+</style>
+</head>
+<body>
+
+<div class="bg">
+<div class="nav">
+<table align="left">
+<tr>
+<td><img src="logo2.png" width="65" height="65"></td>
+<td><h1 class="logo">Ceylon <br>Travels</h1></td>
+</tr>
+</table>
+<table width="450" align="right">
+<tr>
+<td align="center"><a class="text1" href="home.html" align="right" target="_blank" ><b>HOME</b></a></td>
+<td align="center"><a class="text1" href="about.html" align="right" target="_blank"><b>ABOUT</b></a></td>
+<td align="center"><a class="text1" href="contact.html" align="right" target="_blank"><b>CONTACT</b></a></td>
+<td align="center"><a class="text1" href="signup.html" align="right" target="_blank"><b>SIGN UP</b></a></td>
+</tr>
+
+</table>
+</div>
+
+<br><br><br><br>
+<center>
+<p class="welcome"><b>Welcome to Ceylon Travels!</b></p>
+</center>
+
+</div>
+	
+<br><br>
+	<marquee behavior="alternate" scrollamount="6">
+	<h2>
+		<font face="algerian" color="1F45FC" size="6">
+			Choose your favourite destination from our best locations...
+		</font></h2></marquee>
+
+	<table align="center"> 
+		 
+		<tr>
+			<td><marquee behavior="slide" direction="left" scrollamount="10">
+<div class="container">
+			<a href="Japan.html"><img src="4.jpg" height="400" width="400" alt="Osaka-castle" class="image"/></a>
+			<div class="middle"><div class="text">Japan</div>
+			</div>
+</div>
+			</marquee></td>
+
+
+			<td><marquee behavior="slide" direction="left" scrollamount="10">
+<div class="container">
+			<a href="France.html"><img src="5.jpg" height="400" width="400" alt="Eiffel Tower" class="image"/></a>
+			<div class="middle"><div class="text">France</div>
+ 			 </div>
+</div>
+			</marquee></td>
+
+
+			<td><marquee behavior="slide" direction="left" scrollamount="10">
+<div class="container">
+			<a href="USA.html"><img src="6.jpg" height="400" width="400" alt="Walt Disney world resort" class="image"/>
+			<div class="middle"><div class="text">USA</div>
+			</div>
+</div>
+			</marquee></td>
+		</tr>
+
+
+		<tr>
+			<td><marquee behavior="slide" direction="left" scrollamount="10">
+<div class="container">
+			<a href="Singapore.html"><img src="7.jpg" height="400" width="400" alt="cover-mer-park" class="image"/>
+			<div class="middle"><div class="text">Singapore</div>
+			</div>
+</div>
+			</marquee></td>
+
+
+			<td><marquee behavior="slide" direction="left" scrollamount="10">
+<div class="container">
+			<a href="Thailand.html"><img src="8.jpg" height="400" width="400" alt="Bangkok" class="image"/>
+			<div class="middle"><div class="text">Thailand</div>
+			</div>
+</div>
+			</marquee></td>
+
+
+			<td><marquee behavior="slide" direction="left" scrollamount="10">
+<div class="container">
+			<a href="New Zealand.html"><img src="9.jpg" height="400" width="400" alt="Manila" class="image"/>
+			<div class="middle"><div class="text">New Zealand</div>
+			</div>
+</div>
+			</marquee></td>
+		</tr>
+		
+	</div></table>
+
+</body>
+</html>

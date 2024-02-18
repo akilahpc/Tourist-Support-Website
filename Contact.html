@@ -1,0 +1,409 @@
+<html>
+ <head>
+ <title>Contact</title>
+ 
+<style>
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:'Poppins', sans-serif;	
+}
+
+body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+	background:#03080a;
+}
+
+.fullPg{
+	width:90%;
+	padding:20px;
+}
+
+
+/* start nav bar */
+
+nav{
+	 width:100%;
+	 height:10vh;
+	 background:rgba(0,0,0,0.2);
+	 color: lightblue; 
+	 display:flex;
+	 justify-content:space-between;
+	 align-items:center;
+	 text-transform:uppercase;
+	 position: -webkit-sticky;  
+     position: sticky;
+     top: 0;
+     padding: 5px;
+
+ }
+ 
+.logo{ 	color: white;
+		font-size: 25px;
+		font-family: Rockwell;
+}
+ 
+ nav .menu{
+	 width:40%;
+	 display:flex;
+	 justify-content:space-around;
+	 font-size: 18px;
+ }
+ 
+ nav .menu a{
+	width:25%;
+    text-decoration:none;
+	color:white;
+	font-weight:bold;
+ }
+ 
+ nav .menu a.c{
+	 color:rgba(188,188,188);
+ }
+ 
+  nav .menu a{
+  color: lightblue;
+ }
+
+/* Closed nav bar */
+
+
+/* Contact Us image start */
+
+h4 {
+  font-size: 55;
+  background-image:url(contact-us2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no repeat;
+  height:50%;
+  color:white;
+}
+
+/* Contact Us image closed */
+
+
+.fullPg h2 {
+	width:100%;
+	color:#45f3ff;
+	font-size:36px;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+.fullPg .row100{
+
+	width:100%;
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+	
+}
+
+.fullPg .row100 .col{
+	position:relative;
+	width:100%;
+	padding:0 10px;
+	margin:30px 0 10px;
+	transition:0.5s;
+}
+
+.fullPg .row100 .inputBox{
+	position:relative;
+	width:100%;
+	height:40px;
+	color:#45f3ff;
+	
+}
+
+.fullPg .row100 .inputBox input,
+.fullPg .row100 .inputBox.textarea textarea 
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:transparent;
+	box-shadow:none;
+	border:none;
+	outline:none;
+	font-size:18px;
+	padding:0 10px;
+	z-index:1;
+	color:#000;
+}
+
+.fullPg .row100 .inputBox .text{
+	position:absolute;
+	top:0;
+	left:0;
+	line-height:40px;
+	font-size:18px;
+	padding:0 10px;
+	display:block;
+	transition:0.5s;
+	pointer-events:none;
+}
+
+.fullPg .row100 .inputBox input:focus + .text,
+.fullPg .row100 .inputBox input:valid + .text{
+	top: -35px;
+	left: -10px;
+}
+
+.fullPg .row100 .inputBox .line {
+	position:absolute;
+	bottom:0;
+	display:block;
+	width:100%;
+	height:2px;
+	background:#45f3ff;
+	transition:0.5s;
+	border-radius:2px;
+	pointer-events:none;
+}
+
+.fullPg .row100 .inputBox input:focus ~ .line,
+.fullPg .row100 .inputBox input:valid ~ .line {
+	height:100%;
+}
+
+.fullPg .row100 .inputBox.textarea {
+	position: relative;
+	width:100%;
+	height:100px;
+	padding:10px 0;
+}
+
+.fullPg .row100 .inputBox.textarea textarea {
+	height: 100%;
+	resize: none;
+}
+
+.fullPg .row100 .inputBox textarea:focus + .text,
+.fullPg .row100 .inputBox textarea:valid + .text{
+	top: -35px;
+	left: -10px;
+}
+
+.fullPg .row100 .inputBox textarea:focus ~ .line,
+.fullPg .row100 .inputBox textarea:valid ~ .line {
+	height:100%;
+}
+
+input[type="submit"] {
+	border:none;
+	padding:7px 35px;
+	cursor:pointer;
+	outline:none;
+	background:#45f3ff;
+	color:#000;
+	font-size:18px;
+	border-radius:9px;
+}
+
+
+/* Location map*/
+
+iframe{
+	width:100%;
+	height:300px;
+
+}
+
+.mapHead{
+	color:white;
+}
+
+
+/* Contact infor*/
+
+.infor h3{
+	color:#fff;
+}
+
+.infor .inforBox div{
+	display:flex;
+	align-items:center;
+	margin-bottom:25px;
+}
+
+.infor .inforBox div span{
+	min-width:40px;
+	height:40px;
+	color:#fff;
+	background:#18b7ff;
+	display:flex;
+	justify-content:center;
+	font-size:1.5em;
+	border-radius:50%;
+	margin-right:15px;
+}
+
+.infor .inforBox div p{
+	color:#fff;
+	font-size:1.1em;
+}
+
+.infor .inforBox div a{
+	color:#fff;
+	text-decoration:none;
+	font-size:1.1em;
+}
+
+.sci{
+	margin-top:40px;
+	display:flex;
+}
+
+.sci li{
+	list-style:none;
+	margin-right:15px;
+}
+
+.sci li a{
+	color:#fff;
+	font-size:2em;
+	color:#ccc;
+}
+
+.sci li a:hover{
+	color:#fff;
+}
+
+
+</style>
+
+ </head>
+ 
+ <body>
+
+  
+ <div class="fullPg">
+ 
+ 
+ <!-- nav bar -->
+ 
+ <nav>
+ 
+  <p> <img src="logo2.png" wdith="75" height="75"><h1 class="logo">Ceylon <br>Travels</h1> </p> 
+   
+   <div class="menu">
+    <a href="home.html">Home</a>
+	<a href="about.html">About</a>
+	<a href="contact.html" class="c">Contact</a>
+	<a href="signup.html">Sign Up</a>
+   </div>
+  </nav> 
+  <br><br><br><br><br>
+
+<h4 align="center">Contact Us</h4>
+
+ <!-- Contact us -->
+ 
+
+  <div class="row100">
+   <div class="col">
+    <div class="inputBox">
+	 <input type="text" name="" required="required">
+	 <span class="text"> First Name </span>
+	 <span class="line"></span>
+	</div>
+   </div>
+   <div class="col">
+    <div class="inputBox">
+	 <input type="text" name="" required="required">
+	 <span class="text"> Last Name </span>
+	 <span class="line"></span>
+	</div>
+   </div>
+  </div>
+  <div class="row100">
+   <div class="col">
+    <div class="inputBox">
+	 <input type="text" name="" required="required">
+	 <span class="text"> Email </span>
+	 <span class="line"></span>
+	</div>
+   </div>
+   <div class="col">
+    <div class="inputBox">
+	 <input type="text" name="" required="required">
+	 <span class="text"> Mobile </span>
+	 <span class="line"></span>
+	</div>
+   </div>
+  </div>
+  <div class="row100">
+   <div class="col">
+    <div class="inputBox textarea">
+	 <textarea required="required"></textarea>
+	 <span class="text"> Type your message here.. </span>
+	 <span class="line"></span>
+	</div>
+   </div>
+  </div>
+  <div class="row100">
+    <div class="col">
+	 <input type="submit" value="send" onclick="myFunction()">
+	 <script>
+        function myFunction() {
+         alert("Successfully Completed");
+        }
+     </script>
+   </div>
+  </div>
+  <br><br><br><br>
+  
+  <!-- Location map -->
+  <table align="left" width="500" >
+  <tr>
+  <td>
+  <h1 class="mapHead">Locaton map</h1><p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15843.48066056633!2d79.85759418371667!3d6.906125272231316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2596d4d7b0c47%3A0x58ae31d4af76cd39!2zTmF3YW0gTWF3YXRoYSwg4Laa4Lec4LeF4La5!5e0!3m2!1ssi!2slk!4v1666421200818!5m2!1ssi!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </td>
+  </tr>
+  </table>
+  
+  <!-- Contact infor -->
+  <table align="right" width="500">
+  <tr>
+  <td>
+  
+  <div class="contact infor">
+   <h1 align="center" class="mapHead"><b>Contact Infor</b></h1><br><br>
+   <div class="inforBox">
+    <div>
+	 <span> <ion-icon name="location"></ion-icon> </span>
+	 <p>Ceylon Travel, No.100, Nawam Mawatha,<br> Colombo 00200, Sri Lanka</p>
+    </div>
+	<div>
+	 <span> <ion-icon name="mail"></ion-icon> </span>
+	 <a href="#">ceylontravels@gmail.com</a>
+    </div>
+	<div>
+	 <span> <ion-icon name="call"></ion-icon> </span>
+	 <a href="#">0118 222 333</a>
+    </div>
+	<ul class="sci">
+	<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+	<li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+	<li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+	<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+	</ul>
+   </div>
+  </div>
+  
+ </div>
+ 
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+ </td>
+ </tr>
+ </table>
+ 
+</body>
+</html>
